@@ -2,4 +2,123 @@ defaults:
   iv: 0.18
   iv_shock: 0.03
   risk_free_rate: 0.05
-positions: []
+positions:
+- name: Above 7650
+  expiry: '2026-06-30'
+  kind: touch
+  kalshi:
+    strike: 7650
+    touch: above
+    side: 'YES'
+    avg_price: 0.219
+    contracts: 177
+  spread:
+    action: sell
+    type: call
+    strikes: [7650, 7655]
+    price: 0.95
+    lots: 1
+- name: Above 7670
+  expiry: '2026-06-30'
+  kind: touch
+  kalshi:
+    strike: 7670
+    touch: above
+    side: 'YES'
+    avg_price: 0.156
+    contracts: 986
+  spread:
+    action: sell
+    type: call
+    strikes: [7670, 7690]
+    price: 2.65
+    lots: 1
+- name: Above 7710
+  expiry: '2026-06-30'
+  kind: touch
+  kalshi:
+    strike: 7710
+    touch: above
+    side: 'YES'
+    avg_price: 0.105
+    contracts: 1376
+  spread:
+    action: sell
+    type: call
+    strikes: [7710, 7730]
+    price: 1.90
+    lots: 1
+- name: Above 7740
+  expiry: '2026-06-30'
+  kind: touch
+  kalshi:
+    strike: 7740
+    touch: above
+    side: 'YES'
+    avg_price: 0.067
+    contracts: 711
+  spread:
+    action: sell
+    type: call
+    strikes: [7740, 7760]
+    price: 1.5
+    lots: 1
+- name: Above 7800
+  expiry: '2026-12-31'
+  kind: touch
+  kalshi:
+    strike: 7800
+    touch: above
+    side: 'YES'
+    avg_price: 0.586
+    contracts: 2671
+  spread:
+    action: sell
+    type: call
+    strikes: [7800, 7840]
+    price: 17.05
+    lots: 1
+- name: Above 8000
+  expiry: '2026-12-31'
+  kind: touch
+  kalshi:
+    strike: 8000
+    touch: above
+    side: 'YES'
+    avg_price: 0.516
+    contracts: 4651
+  spread:
+    action: buy
+    type: put
+    strikes: [8000, 8040]
+    price: 24.5
+    lots: 2
+- name: Below 6300
+  expiry: '2026-12-31'
+  kind: touch
+  kalshi:
+    strike: 6300
+    touch: below
+    side: 'NO'
+    avg_price: 0.71
+    contracts: 7582
+  spread:
+    action: buy
+    type: put
+    strikes: [6300, 6330]
+    price: 3
+    lots: 2
+- name: SPX Positive
+  expiry: '2026-12-31'
+  kind: terminal
+  kalshi:
+    strike: 6845
+    side: 'YES'
+    avg_price: 0.7
+    contracts: 50179
+  spread:
+    action: buy
+    type: put
+    strikes: [6850, 6880]
+    price: 5.98
+    lots: 15
